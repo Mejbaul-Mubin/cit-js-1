@@ -1,0 +1,122 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#player-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.player {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.player:hover {
+  background-color: #0056b3;
+}
+
+#prediction-area,
+#player-template-area {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* An initial field layout */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.player-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: grab;
+  user-select: none;
+  position: relative;
+}
+
+.player-icon span {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.player-icon:hover span {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+#reset-prediction,
+#close-template {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#reset-prediction:hover,
+#close-template:hover {
+  background-color: #c9302c;
+}
+
+#player-template p {
+  margin: 5px 0;
+}
+
+#player-template ul {
+  padding-left: 20px;
+}

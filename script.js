@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let colorIndex = 0;
   let spacingIncreased = false;
   const texts = [
+    "Hi, This is Mejbaul Mubin",
     "Hello, Noakhali!",
     "How are you?",
     "The weather is nice today.",

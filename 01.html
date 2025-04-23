@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Position Predictor</title>
+    <link rel="stylesheet" href="02.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Today's Potential Positions</h1>
+      <div id="player-setup">
+        <h2>Select 11 Players</h2>
+        <div id="player-list">
+          <button class="player">Player 1</button>
+          <button class="player">Player 2</button>
+          <button class="player">Player 3</button>
+          <button class="player">Player 4</button>
+          <button class="player">Player 5</button>
+          <button class="player">Player 6</button>
+          <button class="player">Player 7</button>
+          <button class="player">Player 8</button>
+          <button class="player">Player 9</button>
+          <button class="player">Player 10</button>
+          <button class="player">Player 11</button>
+        </div>
+      </div>
+
+      <div id="prediction-area" class="hidden">
+        <h2>Potential Positions</h2>
+        <div id="field"></div>
+        <button id="reset-prediction">Reset Setup</button>
+      </div>
+
+      <div id="player-template-area" class="hidden">
+        <h2>Player Information</h2>
+        <div id="player-template">
+          <p>Name: <span id="template-name"></span></p>
+          <p>Potential Position: <span id="template-position"></span></p>
+          <p>Other Information:</p>
+          <ul>
+            <li>...</li>
+          </ul>
+        </div>
+        <button id="close-template">Close</button>
+      </div>
+    </div>
+
+    <script src="sc.js"></script>
+  </body>
+</html>
